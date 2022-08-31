@@ -1,4 +1,4 @@
-# To Convert to Webp avec Linux ou Windows
+# To Convert to Webp
 
 Ce petit script bash à pour but de gagner beaucoup de temps lorsque l'on doit convertir
 beaucoup de fichier image.
@@ -11,14 +11,14 @@ quelques pré-requis.
 [Pré-requis](#Pré-requis)  
 [Principe](#Principe)  
 [Exemple](#Exemple)  
-[Linux](#Linux)  
+[Installation](#Installation)  
 [Windows](#Windows)  
   
 
 ## Pré requis
 
 -   Installer le package "webp" et avoir accès à la commande cwebp
--   Être sous une distribution Linux voire WSL sur Windows (testé sous Debian et Ubuntu)
+-   Être sous Windows, MacOS ou Linux (Distribution Ubuntu et Debian testé)
 -   Le script doit être positioner dans le dossier à coté des images à convertir
 
 ## Principe
@@ -47,12 +47,19 @@ Nouvelle structure :
 -   ./export/image2.webp
 -   ./export/image3.webp
 
-## Linux
+## Installation
 
 Installe le package webp
 
+Linux
 ```bash
   sudo apt install webp
+```
+
+MacOS
+
+```bash
+  brew install webp
 ```
 
 Clone le projet via Githup Desktop, Github CLI, ou git.
@@ -105,4 +112,4 @@ Maintenant, tu es dans la partis Linux, pour passer dans les dossiers de Windows
    cd /mnt/c/Users/(nom de ton dossier utilisateurs windows)/
 ```
 
-Et voilà. Tu peux désormais suivre l'installation du script coté [Linux](#Linux)
+Et voilà. Tu peux désormais suivre l'installation du script coté [Installation](#Installation)
