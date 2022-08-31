@@ -1,4 +1,4 @@
-# To Convert to Webp avec Linux
+# To Convert to Webp avec Linux ou Windows
 
 Ce petit script bash à pour but de gagner beaucoup de temps lorsque l'on doit convertir
 beaucoup de fichier image.
@@ -10,16 +10,17 @@ quelques pré-requis.
 
 [Pré-requis](#Pré-requis)  
 [Principe](#Principe)  
-[Installation](#Installation)  
+[Linux](#Linux)
+[Windows](#Windows)
 [Exemple](#Exemple)
 
 ## Pré requis
 
 -   Installer le package "webp" et avoir accès à la commande cwebp
--   Être sous une distribution Linux (testé sous Debian et Ubuntu)
+-   Être sous une distribution Linux voire WSL sur Windows (testé sous Debian et Ubuntu)
 -   Le script doit être positioner dans le dossier à coté des images à convertir
 
-## Principe de base
+## Principe
 
 Le script est à
 
@@ -45,7 +46,7 @@ Nouvelle structure :
 -   ./export/image2.webp
 -   ./export/image3.webp
 
-## Installation
+## Linux
 
 Installe le package webp
 
@@ -75,3 +76,32 @@ Désormais tu peux placer tout les fichiers image à coté du script puis de tap
 ```
 
 Enjoy !
+
+## Windows 
+
+Si tu n'as pas installer WSL voici comment faire.  
+Ouvre le terminal en tant qu'administrateur puis tape cette commande pour installer Ubuntu en ligne de commande sur windows
+
+```bash
+   wsl --install
+```
+
+Une fois le téléchargement terminé, il va falloir redémarrer le PC pour qu'il installe Ubuntu lorsqu'il aura redémarrer.   
+Une fois installer, entre un username et un password (Il faut bien retenir le password)  
+Maintenant que tout est installer, tu peux lancer le terminal Windows et sélectionner Ubuntu via le petit menu déroulant.  
+
+Tu es maintenant sur un terminal linux classique. Pour bien être à jour avant d'installer la dépendance requise pour le script, tape cette commande : 
+
+```bash
+  sudo apt update && sudo upgrade -y
+```
+
+Tu seras inviter à entrer le password précédemment saisi pour Linux puis à entrer "Y" pour accepter l'installation des mises à jours. 
+
+Maintenant, tu es dans la partis Linux, pour passer dans les dossiers de Windows il faut passer par cette commande pour se balader dans les dossiers 
+
+```bash
+   cd /mnt/c/Users/(nom de ton dossier utilisateurs windows)/
+```
+
+Et voilà. Tu peux désormais suivre l'installation du script coté [Linux](#Linux)
