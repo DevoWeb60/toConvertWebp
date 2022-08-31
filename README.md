@@ -10,9 +10,9 @@ quelques pré-requis.
 
 [Pré-requis](#Pré-requis)  
 [Principe](#Principe)  
-[Linux](#Linux)
-[Windows](#Windows)
-[Exemple](#Exemple)
+[Linux](#Linux)  
+[Windows](#Windows)  
+[Exemple](#Exemple)  
 
 ## Pré requis
 
