@@ -5,6 +5,7 @@ folderContainingFilesToConvert=`pwd`
 folderToExport=$1
 scriptName="toConvert.sh"
 exportFolderExist=false
+fileExtensionToConvert=test
 
 # FUNCTIONS 
 function checkIfFolderExist() {
@@ -22,7 +23,7 @@ function convertToWebp() {
 
 function getExtension() {
     local fileExtension=${1##*.}
-    echo $fileExtension
+    fileExtensionToConvert=$fileExtension
 }
 
 # MAIN
@@ -39,8 +40,11 @@ fi
 cd $folderContainingFilesToConvert
 for file in * ; do
     if [ -f $file ] && [ "$file" != $scriptName ]; then
-        if [ getExtension $file == "jpg" ] || [ getExtension $file == "png" ] || [ getExtension $file == "jpeg" ]; then
+        getExtension $file
+        if [ $fileExtensionToConvert == "jpg" ] || [ $fileExtensionToConvert == "png" ] || [ $fileExtensionToConvert == "jpeg" ]; then
             convertToWebp $file
+        else 
+            echo "Le fichier $file n'est pas une image"
         fi
     fi
 done
