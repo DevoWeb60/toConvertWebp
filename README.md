@@ -128,6 +128,21 @@ Pour ce faire, en fonction de si tu utilise un terminal bash ou zsh, il va fallo
   nano ~/.bash_profile
 ```
 
+Navigue avec les fleche vers PATH puis ajoute à la fin le chemin donné par "pwd" précédemment bien séparer d'un ":" 
+
+```
+  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/devoweb/bin
+```
+
+Ensuiter appuie sur CTRL + X pour quitter et Y pour valider les changements pour finir par ENTRÉE pour quitter nano.
+Maintenant en exécutant le commande 
+
+```
+  echo $PATH 
+```
+
+Tu devrais voir le nouveau PATH même après avoir relancer le terminal. 
+
 ## Windows
 
 Si tu n'as pas installer WSL voici comment faire.  
