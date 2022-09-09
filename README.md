@@ -117,6 +117,17 @@ Maintenant, on va pouvoir ajouter ce chemin à la variable PATH de cette façon.
   export PATH=$PATH:/Users/devoweb/bin
 ```
 
+### Je n'ai plus accès à la commande après avoir fermer le terminal
+
+Dans ce cas, c'est que la variable PATH ne s'est pas sauvegarder. 
+Pour ce faire, en fonction de si tu utilise un terminal bash ou zsh, il va falloir éditer les fichiers profile pour ajouter le chemin de manuellement et de façon permanent. 
+
+```
+  nano ~/.zprofile 
+  OU
+  nano ~/.bash_profile
+```
+
 ## Windows
 
 Si tu n'as pas installer WSL voici comment faire.  
