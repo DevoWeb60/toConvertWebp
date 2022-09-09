@@ -25,7 +25,7 @@ quelques pré-requis.
 
 toConvert prend un paramètre, le nom du dossier d'exportation. Il peut être appelé comme on le veut et va être créer si il n'existe pas.  
 
-Le script va scanner tout les fichiers et dossier du dossier current pour filtrer et garder uniquement les fichiers png, jpg et jpeg.  
+Le script va scanner tout les fichiers et dossier du dossier courrant pour filtrer et garder uniquement les fichiers png, jpg et jpeg.  
 
 Ensuite on execute la dépendance webp pour convertir et placer les fichiers converti dans le dossier d'exportation voulu
 
